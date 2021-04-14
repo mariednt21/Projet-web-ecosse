@@ -6,6 +6,23 @@ function setData(index){
 	let storage3 = localStorage.getItem('inventory3');
 	let storage4 = localStorage.getItem('inventory4');
 
+	var check = false;
+    var keys = Object.keys(localStorage);
+	console.log(keys);
+
+	for(var key of keys){
+		console.log("key : "+key+" : Value : " +localStorage.getItem(key));
+
+		if(object[index].innerHTML == localStorage.getItem(key))
+		{
+			alert("You already took that item");
+			window.location.reload();
+			check = true;
+		}
+	}
+
+if(check == false)
+{
 	if(storage1 == null){
 		localStorage.setItem('inventory1',object[index].innerHTML);
 	}
@@ -22,13 +39,47 @@ function setData(index){
 		console.log("No space remaining in inventory");
 		alert("No space remaining in inventory");
 	}
+}
 
+}
+
+function getData(){
+	var keys = Object.keys(localStorage);
+	console.log(keys);
+
+	for(var key of keys){
+		console.log("key : "+key+" : Value : " +localStorage.getItem(key));
+	}
 }
 
 function deleteData(key){
 	localStorage.removeItem(key);
 }
 
+
+function checkData(object,link,message){
+
+var check = false;
+
+   var keys = Object.keys(localStorage);
+	console.log(keys);
+
+	for(var key of keys){
+		console.log("key : "+key+" : Value : " +localStorage.getItem(key));
+		if(localStorage.getItem(key) == object)
+		{
+			deleteData(key);
+			document.getElementById("link").href = link;
+			console.log("Element delete from inventory");
+			check = true;
+		}
+	}
+	if(check == false)
+	{
+		alert(message);
+	}
+
+}
 /*
 
 var inventory = [];

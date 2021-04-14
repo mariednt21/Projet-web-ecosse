@@ -23,9 +23,19 @@
 	background: url(images/backgrounds/elfHouse.jpg) no-repeat;
 }
 
+#mushrooms
+{
+	background: url(images/backgrounds/mushrooms.jpg) no-repeat;
+}
+
 #river
 {
 	background: url(images/backgrounds/river.jpg) no-repeat;
+}
+
+#cerf
+{
+	background: url(images/backgrounds/cerf2.jpg) no-repeat;
 }
 
 #marais
@@ -45,6 +55,7 @@
 	float: right;
 	position: relative;
 	top : 530px;
+	right: 50px;
 	height: 100px;
 	width: 100px;
 }
@@ -55,6 +66,14 @@
 	position: absolute;
 	top : 200px;
 	left: 400px;
+}
+
+h1
+{
+	color: white;
+	position: absolute;
+	left: 570px;
+	top: 100px;
 }
 
 button
@@ -71,6 +90,13 @@ button
 button:hover
 {
 	background: lightgrey;
+}
+
+button.inventory
+{
+	border: none;
+	border-radius: 0;
+	margin-right: 70px;
 }
 
 div
@@ -97,8 +123,22 @@ div#story
 	text-align: center;
 	color : white;
 	font-size: 18px;
-
 }
+
+div#inventory
+{
+	background: rgb(40,40,40,.7); 
+	border-radius: 10px;
+	padding: 10px;
+	width : 500px;
+	position: absolute;
+	top : 200px;
+	left: 400px;
+	text-align: center;
+	color : white;
+	font-size: 18px;
+}
+
 
 p{
 	font-size : 20px;
