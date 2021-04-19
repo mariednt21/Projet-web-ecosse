@@ -28,6 +28,21 @@
 	background: url(images/backgrounds/mushrooms.jpg) no-repeat;
 }
 
+#deerKing
+{
+	background: url(images/backgrounds/cerf.jpg) no-repeat;
+}
+
+#rocks
+{
+	background: url(images/backgrounds/rock.jpg) no-repeat;
+}
+
+#giant
+{
+	background: url(images/backgrounds/treeGiant.jpg) no-repeat;
+}
+
 #river
 {
 	background: url(images/backgrounds/river.jpg) no-repeat;
@@ -43,6 +58,26 @@
 	background: url(images/backgrounds/marais.jpg) no-repeat;
 }
 
+#marais2
+{
+	background: url(images/backgrounds/marais2.jpg) no-repeat;
+}
+
+#shadowCreature
+{
+	background: url(images/backgrounds/Creature.jpg) no-repeat;
+}
+
+#guards
+{
+	background: url(images/backgrounds/guards.jpg) no-repeat;
+}
+
+#witch
+{
+	background: url(images/backgrounds/angel.jpg) no-repeat;
+}
+
 .floatimage
 {
 	float: left;
@@ -54,10 +89,10 @@
 {
 	float: right;
 	position: relative;
-	top : 530px;
+	top : 450px;
 	right: 50px;
-	height: 100px;
-	width: 100px;
+	height: 175px;
+	width: 175px;
 }
 
 .homePageH1
@@ -137,6 +172,18 @@ div#inventory
 	text-align: center;
 	color : white;
 	font-size: 18px;
+}
+
+div#end
+{
+	background: rgb(40,40,40,.7); 
+	border-radius: 10px;
+	padding: 10px;
+	width : 500px;
+	position: absolute;
+	top : 450px;
+	left: 400px;
+	text-align-last: center;
 }
 
 

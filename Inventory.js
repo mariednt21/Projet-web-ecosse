@@ -80,6 +80,19 @@ var check = false;
 	}
 
 }
+
+function deleteInventory()
+{
+   var keys = Object.keys(localStorage);
+
+	for(var key of keys){
+
+		if(localStorage.getItem(key) != null)
+		{
+			deleteData(key);
+		}
+	}
+}
 /*
 
 var inventory = [];
