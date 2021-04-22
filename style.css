@@ -13,6 +13,12 @@
 	background: url(images/backgrounds/story.jpg) no-repeat;
 }
 
+audio
+{
+	position: absolute;
+	left : 500px;
+}
+
 #forestEntrance
 {
 	background: url(images/backgrounds/forestEntrance.jpg) no-repeat;
@@ -53,6 +59,11 @@
 	background: url(images/backgrounds/cerf2.jpg) no-repeat;
 }
 
+#tunnel
+{
+	background: url(images/backgrounds/tunnel.jpg) no-repeat;
+}
+
 #marais
 {
 	background: url(images/backgrounds/marais.jpg) no-repeat;
@@ -61,6 +72,36 @@
 #marais2
 {
 	background: url(images/backgrounds/marais2.jpg) no-repeat;
+}
+
+#mountain
+{
+	background: url(images/backgrounds/mountain.jpg) no-repeat;
+}
+
+#cave
+{
+	background: url(images/backgrounds/cave.jpg) no-repeat;
+}
+
+#wolf
+{
+	background: url(images/backgrounds/wolfCave.jpg) no-repeat;
+}
+
+#dark
+{
+	background: black;
+}
+
+#dragon
+{
+	background: url(images/backgrounds/dragon.jpg) no-repeat;
+}
+
+#exitCave
+{
+	background: url(images/backgrounds/exitCave.jpg) no-repeat;
 }
 
 #shadowCreature
@@ -73,23 +114,36 @@
 	background: url(images/backgrounds/guards.jpg) no-repeat;
 }
 
+#castle
+{
+	background: url(images/backgrounds/castle.jpg) no-repeat;
+}
+
+#dungeon
+{
+	background: url(images/backgrounds/castle/dungeon.jpg) no-repeat;
+}
+
+#entryCastle
+{
+	background: url(images/backgrounds/castle/entryCastle.jpg) no-repeat;
+}
+
 #witch
 {
 	background: url(images/backgrounds/angel.jpg) no-repeat;
 }
 
-.floatimage
+#end
 {
-	float: left;
-	height: 50px;
-	width: 50px;
+	background: url(images/backgrounds/end.jpg) no-repeat;
 }
 
 .floatimage2
 {
 	float: right;
-	position: relative;
-	top : 450px;
+	position: absolute;
+	top : 540px;
 	right: 50px;
 	height: 175px;
 	width: 175px;

@@ -6,7 +6,7 @@
 </head>
 <body id="deerKing">
 
-	<div>
+			<div>
           		 <p> 
           		 	You come face to face with the deer king. He knows all the shortcuts in the forest, his information can be useful to you. Have you got anything to feed him ? 
            		</p>
@@ -16,7 +16,7 @@
 				</a>
 
 				<a href="GameOver.html">
-				<button>Try to catch him</button>
+				<button onclick="gameOver()">Try to catch him</button>
 				</a>
 
 		   </div>
@@ -41,14 +41,19 @@
 						checkData(promptText,'Witch.html','You do not have a brown mushroom in your inventory');
 					}
 					
-					if(promptText == 'pie')
+					else if(promptText == 'pie')
 					{
-						checkData(promptText,'Witch.html','You do not have a pie in your inventory');
+						alert("He do not like stolen pie...");
+						checkData(promptText,'GameOver.html','You do not have a pie in your inventory');
 					}
 				
-				    if(promptText == 'stone')
+				    else if(promptText == 'stone')
 					{
 						alert("You can not give him a stone to eat");
+					}
+					else if(promptText == '')
+					{
+						alert("Please type something");
 					}
 
 					else
